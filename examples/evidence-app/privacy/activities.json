@@ -1,0 +1,22 @@
+{
+  "activities": {
+    "customer_registration": {
+      "name": "Customer registration",
+      "purpose": "Register a new customer account and verify identity for onboarding.",
+      "lawfulBasis": "Contract execution and identity verification required for account creation.",
+      "dataSubjects": ["customers"],
+      "retention": "Keep customer registration data while the account is active and for the legally required retention period after closure.",
+      "fields": {
+        "rut": {
+          "necessity": "Verify customer identity during onboarding."
+        },
+        "email": {
+          "necessity": "Create the account and send account-related communications."
+        },
+        "fullName": {
+          "necessity": "Identify the customer account holder."
+        }
+      }
+    }
+  }
+}

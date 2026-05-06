@@ -1,0 +1,125 @@
+{
+  "jurisdiction": "CL",
+  "law": "Ley 21.719",
+  "generatedAt": "2026-05-05T19:35:05.695Z",
+  "records": [
+    {
+      "activityName": "Customer registration",
+      "role": "Responsable",
+      "dataCategories": [
+        {
+          "category": "Datos identificatorios",
+          "items": [
+            "RUT/RUN",
+            "Nombre"
+          ],
+          "detectedFields": [
+            "rut",
+            "fullName"
+          ],
+          "evidence": [
+            {
+              "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+              "line": 4,
+              "column": 2,
+              "snippet": "rut: string;"
+            },
+            {
+              "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+              "line": 13,
+              "column": 6,
+              "snippet": "rut: customer.rut,"
+            },
+            {
+              "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+              "line": 6,
+              "column": 2,
+              "snippet": "fullName: string;"
+            },
+            {
+              "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+              "line": 15,
+              "column": 6,
+              "snippet": "fullName: customer.fullName"
+            }
+          ]
+        },
+        {
+          "category": "Datos de contacto",
+          "items": [
+            "Correo electronico"
+          ],
+          "detectedFields": [
+            "email"
+          ],
+          "evidence": [
+            {
+              "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+              "line": 5,
+              "column": 2,
+              "snippet": "email: string;"
+            },
+            {
+              "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+              "line": 14,
+              "column": 6,
+              "snippet": "email: customer.email,"
+            }
+          ]
+        }
+      ],
+      "dataSubjectUniverse": [
+        "Clientes"
+      ],
+      "purpose": "Register a new customer account and verify identity for onboarding.",
+      "lawfulBasisOrLegitimateInterest": "Contract execution and identity verification required for account creation.",
+      "expectedRecipients": [
+        "Internal customer API"
+      ],
+      "retentionPeriod": "Keep customer registration data while the account is active and for the legally required retention period after closure.",
+      "dataSource": [
+        "Titular de datos personales"
+      ],
+      "sourceEvidence": [
+        {
+          "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+          "line": 4,
+          "column": 2,
+          "snippet": "rut: string;"
+        },
+        {
+          "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+          "line": 13,
+          "column": 6,
+          "snippet": "rut: customer.rut,"
+        },
+        {
+          "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+          "line": 5,
+          "column": 2,
+          "snippet": "email: string;"
+        },
+        {
+          "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+          "line": 14,
+          "column": 6,
+          "snippet": "email: customer.email,"
+        },
+        {
+          "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+          "line": 6,
+          "column": 2,
+          "snippet": "fullName: string;"
+        },
+        {
+          "file": "/Users/felipesanmartinsoto/Documents/Codex/2026-05-05/build-an-open-source-mvp-cli/examples/evidence-app/src/customer.ts",
+          "line": 15,
+          "column": 6,
+          "snippet": "fullName: customer.fullName"
+        }
+      ],
+      "reviewStatus": "complete",
+      "gaps": []
+    }
+  ]
+}

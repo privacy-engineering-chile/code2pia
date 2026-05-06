@@ -1,0 +1,31 @@
+{
+  "jurisdiction": "CL",
+  "lawName": "Ley 21.719",
+  "controller": "Example SpA",
+  "service": "evidence-app",
+  "activities": [
+    {
+      "id": "customer_registration",
+      "name": "Customer registration",
+      "purpose": "Register a new customer account and verify identity for onboarding.",
+      "lawfulBasis": "Contract execution and identity verification required for account creation.",
+      "dataSubjects": [
+        "customers"
+      ],
+      "personalData": [
+        "rut",
+        "email",
+        "fullName"
+      ],
+      "sensitiveData": [],
+      "retention": "Keep customer registration data while the account is active and for the legally required retention period after closure.",
+      "processors": [],
+      "recipients": [],
+      "internationalTransfers": [],
+      "securityMeasures": [
+        "Access control",
+        "TLS in transit"
+      ]
+    }
+  ]
+}

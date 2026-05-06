@@ -1,0 +1,54 @@
+{
+  "name": "code2pia",
+  "version": "0.1.0",
+  "description": "Privacy as Code CLI that scans JavaScript and TypeScript repositories and generates PIA/DPIA drafts.",
+  "type": "module",
+  "bin": {
+    "code2pia": "./dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CONTRIBUTING.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli/index.ts",
+    "scan:example": "npm run build && node dist/cli/index.js scan examples/sample-app --jurisdiction CL-LEY-21719 --json examples/report.json --markdown examples/pia.md",
+    "scan:sample:low": "npm run build && node dist/cli/index.js scan examples/low-app --jurisdiction CL-LEY-21719",
+    "scan:sample:medium": "npm run build && node dist/cli/index.js scan examples/medium-app --jurisdiction CL-LEY-21719",
+    "scan:sample:high": "npm run build && node dist/cli/index.js scan examples/high-app --jurisdiction CL-LEY-21719",
+    "scan:sample:evidence": "npm run build && node dist/cli/index.js scan examples/evidence-app --jurisdiction CL-LEY-21719 --privacy-file code2pia.privacy.yaml",
+    "scan:samples": "npm run scan:sample:low && npm run scan:sample:medium && npm run scan:sample:high",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "privacy",
+    "privacy-as-code",
+    "pia",
+    "dpia",
+    "static-analysis",
+    "typescript",
+    "cli"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fast-glob": "^3.3.2",
+    "ts-morph": "^23.0.0",
+    "yaml": "^2.8.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

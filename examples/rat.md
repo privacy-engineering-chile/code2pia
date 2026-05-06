@@ -1,0 +1,3 @@
+| Actividad de tratamiento | Responsable o encargado | Categoría de datos | Universo de titulares | Finalidad | Base de legitimidad/interés legítimo | Destinatarios previstos | Período de conservación | Fuente de la cual provienen los datos |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Customer registration | Responsable | Datos identificatorios: RUT/RUN; Nombre<br>Datos de contacto: Correo electronico | Clientes | Register a new customer account and verify identity for onboarding. | Contract execution and identity verification required for account creation. | Internal customer API | Keep customer registration data while the account is active and for the legally required retention period after closure. | Titular de datos personales |

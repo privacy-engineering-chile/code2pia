@@ -1,0 +1,35 @@
+jurisdiction:
+  id: CL-LEY-21719
+service: evidence-app
+owner: Privacy Engineering
+controller: Example SpA
+processingActivities:
+  - id: customer_registration
+    name: Customer registration
+    activityName: Customer registration
+    role: Responsable
+    purpose: Register a new customer account and verify identity for onboarding.
+    lawfulBasis: Contract execution and identity verification required for account creation.
+    lawfulBasisOrLegitimateInterest: Contract execution and identity verification required for account creation.
+    dataSubjects:
+      - customers
+    dataSubjectUniverse:
+      - Clientes
+    personalData:
+      - rut
+      - email
+      - fullName
+    retention: Keep customer registration data while the account is active and for the legally required retention period after closure.
+    retentionPeriod: Keep customer registration data while the account is active and for the legally required retention period after closure.
+    expectedRecipients:
+      - Internal customer API
+    dataSource:
+      - Titular de datos personales
+    processors: []
+    recipients: []
+    internationalTransfers: []
+    securityMeasures:
+      - Access control
+      - TLS in transit
+    dpia:
+      assessed: false

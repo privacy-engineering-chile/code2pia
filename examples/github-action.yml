@@ -1,0 +1,23 @@
+name: code2pia
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  privacy-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run build
+      - run: node dist/cli/index.js scan . --json code2pia-report.json --markdown code2pia-pia.md
+      - uses: actions/upload-artifact@v4
+        with:
+          name: code2pia-reports
+          path: |
+            code2pia-report.json
+            code2pia-pia.md
