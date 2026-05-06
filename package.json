@@ -1,7 +1,7 @@
 {
   "name": "code2pia",
   "version": "0.1.0",
-  "description": "Privacy as Code CLI that scans JavaScript and TypeScript repositories and generates PIA/DPIA drafts.",
+  "description": "Generate RAT and DPIA drafts directly from code.",
   "type": "module",
   "bin": {
     "code2pia": "./dist/cli/index.js"
@@ -10,7 +10,8 @@
     "dist",
     "README.md",
     "CONTRIBUTING.md",
-    "LICENSE"
+    "LICENSE",
+    "SECURITY.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -26,9 +27,12 @@
   },
   "keywords": [
     "privacy",
-    "privacy-as-code",
+    "privacy-engineering",
     "pia",
     "dpia",
+    "rat",
+    "ley-21719",
+    "data-protection",
     "static-analysis",
     "typescript",
     "cli"
